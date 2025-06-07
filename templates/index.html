@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafeteria - Produtos</title>
+</head>
+<body>
+    <h1>Produtos</h1>
+    <form action="/adicionar" method="POST">
+        <input type="text" name="nome" placeholder="Nome do produto" required>
+        <input type="number" step="0.01" name="preco" placeholder="Preço" required>
+        <button type="submit">Adicionar</button>
+    </form>
+    <ul>
+        {% for produto in produtos %}
+            <li>{{ produto.nome }} - R$ {{ produto.preco }} 
+            <a href="/deletar/{{ produto.id }}">Deletar</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/pedidos">Ver Pedidos</a>
+</body>
+</html>

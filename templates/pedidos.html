@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedidos</title>
+</head>
+<body>
+    <h1>Pedidos</h1>
+    <form action="/fazer_pedido" method="POST">
+        <input type="number" name="produto_id" placeholder="ID do Produto" required>
+        <button type="submit">Fazer Pedido</button>
+    </form>
+    <ul>
+        {% for pedido in pedidos %}
+            <li>Pedido #{{ pedido.id }} - Produto ID: {{ pedido.produto_id }} - Status: {{ pedido.status }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Voltar</a>
+</body>
+</html>
