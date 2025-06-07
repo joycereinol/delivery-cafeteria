@@ -1,24 +1,22 @@
+# Projeto Delivery de Cafeteria
 
-# Delivery de Cafeteria
-
-Projeto de aplicação web simples para cadastro de produtos e controle de pedidos de uma cafeteria.
-
-## Tecnologias
+## Ambiente de Desenvolvimento
+- Windows 10
+- VSCode
 - Python 3.12
-- Flask
-- SQLAlchemy
-- SQLite
-- HTML5 e CSS3 (Bootstrap)
 
-## Como Executar
-1. Instale as dependências com:
-```
-pip install flask sqlalchemy flask_sqlalchemy
-```
+## Tecnologias Utilizadas
+- Linguagem: Python 3.12
+- Framework: Flask
+- Banco de Dados: SQLite
 
-2. Rode o app com:
-```
-python app.py
-```
+## Como Instalar e Executar
 
-Acesse: http://127.0.0.1:5000
+```bash
+git clone https://github.com/seuusuario/seurepositorio.git
+cd seurepositorio
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+pip install -r requirements.txt
+python main.py
+
